@@ -1,5 +1,5 @@
 import os
-from sqlalchemy import create_engine
+# from sqlalchemy import create_engine
 
 from dotenv import load_dotenv
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
@@ -15,4 +15,4 @@ DB_CREDENTIALS = {
 }
 
 ENGINE_STR = "postgresql+psycopg2://{user}:{password}@{host}:{port}/{database}".format(**DB_CREDENTIALS)
-SQL_ENGINE = create_engine(ENGINE_STR)
+# SQL_ENGINE = create_engine(ENGINE_STR)
